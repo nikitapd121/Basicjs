@@ -1,22 +1,54 @@
-// https://source.roboflow.com/8HsBLZLdmcdKKwgqJIGTTeSHit42/cRzroDbsKzbATSWQl3GD/original.jpg
-var main=document.getElementById("main");
-var a="";
-for(let i=0;i<=43;i++){
-    let t=Math.floor(Math.random() * 5);
-    if(t==0||t==5)
-    a+='<div class="card"><img src="https://source.roboflow.com/8HsBLZLdmcdKKwgqJIGTTeSHit42/cRzroDbsKzbATSWQl3GD/original.jpg"></div>';
-    else if(t==1||t==6){
-        a+='<div class="card"><img src="https://images.saymedia-content.com/.image/t_share/MTc0NDU1NjM4NjA1NDQwNjQ2/cutest-pokemon-of-all-time.png"></div>';
-    }
-    else if(t==3||t==7){
-        a+='<div class="card"><img src="https://th.bing.com/th/id/OIP.rLSeIWmGPX9ctoj9kWqK_AHaIF?w=900&h=982&rs=1&pid=ImgDetMain"></div>';
-    }
-    else if(t==4||t==8){
-        a+='<div class="card"><img src="https://images.saymedia-content.com/.image/t_share/MTc0NDU1NjM4NjA1NTA2MTgy/cutest-pokemon-of-all-time.png"></div>';
-    }
-    else if(t==2||t==9){
-        a+='<div class="card"><img src="https://images.saymedia-content.com/.image/t_share/MTc0NDU1NjM4NjA0MDY0Mzkw/cutest-pokemon-of-all-time.png"></div>';
-    }
+let s1=document.getElementById("sq1");
+let s2=document.getElementById("sq2");
+let s3=document.getElementById("sq3");
+let s4=document.getElementById("sq4");
+s1.addEventListener("mouseenter",function(){
+    let a=getrandom();
+    let b=getrandom();
+    let c=getrandom();
+    s1.style.backgroundColor=rgb(a,b,c);
+    s1.innerHTML=getrandom();
+})
+s1.addEventListener("mouseleave",function(){
+    s1.style.backgroundColor="white";
+    s1.innerHTML=1;
+})
+s2.addEventListener("mouseenter",function(){
+    let a=getrandom();
+    let b=getrandom();
+    let c=getrandom();
+    s2.style.backgroundColor=rgb(a,b,c);
+    s2.innerHTML=getrandom();
+})
+s2.addEventListener("mouseleave",function(){
+    s2.style.backgroundColor="white";
+    s2.innerHTML=2;
+})
+s3.addEventListener("mouseenter",function(){
+    let a=getrandom();
+    let b=getrandom();
+    let c=getrandom();
+    s3.style.backgroundColor=rgb(a,b,c);
+    s3.innerHTML=getrandom();
+})
+s3.addEventListener("mouseleave",function(){
+    s3.style.backgroundColor="white";
+    s3.innerHTML=3;
+})
+s4.addEventListener("mouseenter",function(){
+    let a=getrandom();
+    let b=getrandom();
+    let c=getrandom();
+    s4.style.backgroundColor=rgb(a,b,c);
+    s4.innerHTML=getrandom();
+})
+s4.addEventListener("mouseleave",function(){
+    s4.style.backgroundColor="white";
+    s4.innerHTML=4;
+})
+function getrandom(){
+    return Math.floor(Math.random()*256);
 }
-main.innerHTML=a;
- 
+function rgb(a, b, c) {
+    return `rgb(${a}, ${b}, ${c})`;
+}

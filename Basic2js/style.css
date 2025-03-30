@@ -1,41 +1,32 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
 }
-
-/* Body styling */
-body {
+html,body{
     height: 100%;
     width: 100%;
 }
-#main{
+.container{
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+.ract{
+    display: flex;
 }
-.card{
-    height: 130px;
-    width: 100px;
-    border: 2px solid black;
-    border-radius: 10px;
+.shape{
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-}
-.card img{
-    width: 100%;
-    height: 100%;
+    height: 200px;
+    width: 200px;
+    font-size: xx-large;
+    font-weight: bolder;
+    border: 4px solid black;
+    font-family: 'Montserrat';
 }
